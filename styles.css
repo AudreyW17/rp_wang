@@ -3,6 +3,7 @@
 .about{
     width:400px;
     margin: auto;
+    
 }
 
 .about-team{
@@ -64,18 +65,26 @@
 
 .table-primary th{
     background-color: #b7d1af;
+    font-family:Ubuntu;
+    font-weight:500;
 }
 
 tbody th.table-secondary {
     background-color:#c9d9c3;
+    font-family:Ubuntu;
+    font-weight:400;
 }
 
 tbody td:nth-child(2) {
     background-color: #ebf3e9;
+    font-family:Ubuntu;
+    font-weight:400;
 }
 
 tbody td:nth-child(3) {
     background-color: #ebf3e9;
+    font-family:Ubuntu;
+    font-weight:400;
 }
 
 .display-4{
@@ -100,7 +109,27 @@ tbody td:nth-child(3) {
 
 .card-body h4{
     color:#537d43;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+
+.border-row{
+    background: #b7d1af;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+
+.card{
+    border-radius: 20px;
+}
+
+.card img{
+    border-radius:20px;
+}
+
+.text-center{
+    font-family: Ubuntu;
 }
 
 /* ----------------- ID CSS ----------------- */
