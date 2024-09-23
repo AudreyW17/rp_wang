@@ -10,15 +10,15 @@
 }
 
 .authors{
-    background-color: #dbe3e7;
+    background-color: #d0e3c9;
 }
 
 .body{
-    background-color: rgb(90, 92, 92);
+    background-color: #9ebd93;
 }
 
 .footer{
-    background-color: #023E8A;
+    background-color: #81a772;
 }
 
 .icon-white{            /* Arrow icon at bottom of page */
@@ -26,7 +26,7 @@
 }
 
 .nb-background-color{   /* navbar background color */
-    background-color: #023E8A;
+    background-color: #81a772;
 }
 
 .nbMenuItem{               /* navbar link text properties */
@@ -35,8 +35,14 @@
     margin-right: 10px;
 }
 
+.nav-item{
+    color:#d0e3c9;
+    font-family:Ubuntu;
+}
+
 .overview{
-    background-color: #dbe3e7;
+    background-color: #d0e3c9;
+    font-family: Ubuntu;
 }
 
 .ovPadLeft{
@@ -48,12 +54,53 @@
 }
 
 .procedure{
-    background-color: #dbe3e7;
+    background-color: #d0e3c9;
     padding: 1px;
 }
 
 .showcase{
-    background-color: #8fa3ab; /*#0096c7*/
+    background-color: #b7d1af; /*#0096c7*/
+}
+
+.table-primary th{
+    background-color: #b7d1af;
+}
+
+tbody th.table-secondary {
+    background-color:#c9d9c3;
+}
+
+tbody td:nth-child(2) {
+    background-color: #ebf3e9;
+}
+
+tbody td:nth-child(3) {
+    background-color: #ebf3e9;
+}
+
+.display-4{
+    font-family:Ubuntu;
+    font-weight:500;
+}
+
+.container h3{
+    font-family: Ubuntu;
+    font-weight:500;
+}
+
+.container h1{
+    font-family: Ubuntu;
+    font-weight:600;
+    color:#537d43
+}
+
+.card-body {
+    font-family: Ubuntu;
+}
+
+.card-body h4{
+    color:#537d43;
+    font-weight: 600;
 }
 
 /* ----------------- ID CSS ----------------- */
