@@ -121,16 +121,42 @@ tbody td:nth-child(3) {
 }
 
 .card{
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .card img{
-    border-radius:20px;
+    border-radius:30px;
 }
 
 .text-center{
     font-family: Ubuntu;
 }
+
+.howTo {
+    text-align: center; 
+    margin: 0 auto; 
+    font-family: Ubuntu;
+}
+.accordion-button {
+    background-color: #dae8d7; 
+    color: #000; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #dae8d7; 
+    box-shadow: 0 0 0 0.25rem #86ab6f80; 
+    color: #537d43;
+}
+
+.accordion-button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 0.25rem #86ab6f80; 
+    border: none; 
+    color:#537d43;
+}
+
+
+
 
 /* ----------------- ID CSS ----------------- */
 
