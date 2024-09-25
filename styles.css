@@ -44,6 +44,8 @@
 .overview{
     background-color: #d0e3c9;
     font-family: Ubuntu;
+    border-radius:40px;
+    margin:20px auto;
 }
 
 .ovPadLeft{
@@ -61,6 +63,8 @@
 
 .showcase{
     background-color: #b7d1af; /*#0096c7*/
+    border-radius:40px;
+    margin:20px auto;
 }
 
 .table-primary th{
@@ -90,17 +94,19 @@ tbody td:nth-child(3) {
 .display-4{
     font-family:Ubuntu;
     font-weight:500;
+    color: #607c55;
 }
 
 .container h3{
     font-family: Ubuntu;
     font-weight:500;
+    color:#eae6e6;
 }
 
 .container h1{
     font-family: Ubuntu;
     font-weight:600;
-    color:#537d43
+    color:#607c55;
 }
 
 .card-body {
@@ -155,8 +161,38 @@ tbody td:nth-child(3) {
     color:#537d43;
 }
 
+.navbar{
+    border-radius:40px;
+    margin:20px auto;
+}
 
+.footer{
+    border-radius:40px;
+    margin:20px auto;
+}
 
+.procedure{
+    border-radius:40px;
+    margin:20px auto;
+}
+
+.authors{
+    border-radius:40px;
+    margin:20px auto;
+}
+
+.table{
+    margin:auto;
+}
+
+.text-center img {
+    border-radius:30px;
+}
+
+.overview-image{
+    margin:20px;
+    border:10px #607c55 solid;
+}
 
 /* ----------------- ID CSS ----------------- */
 
