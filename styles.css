@@ -100,7 +100,7 @@ tbody td:nth-child(3) {
 .container h3{
     font-family: Ubuntu;
     font-weight:500;
-    color:#eae6e6;
+    color:#000000;
 }
 
 .container h1{
@@ -194,6 +194,55 @@ tbody td:nth-child(3) {
     border:10px #607c55 solid;
 }
 
+.profile-img{
+    margin-left: 20px;
+    max-width: 400px;
+    border: 10px solid #607c55;
+}
+
+.author-heading{
+    font-size: xx-large;
+    font-weight:900;
+    font-family: Ubuntu;
+    color:#537d43
+}
+
+.container-author{
+    background-color:#b7d1af;
+    border-radius: 40px;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.index-text{
+    font-size: large;
+}
+
+.col-md-4 img{
+    margin:10px;
+}
+
+.index-img{
+    border: 10px solid #607c55;
+    border-radius:30px;
+
+}
+
+.accordion-body {
+    text-align: left; 
+
+}
+
+.accordion-body ul {
+    list-style-type: disc;
+    padding-left: 20px;  
+}
+
+.accordion-body li {
+    margin-bottom: 10px; 
+}
+
 /* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
@@ -219,4 +268,31 @@ tbody td:nth-child(3) {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .nav-link.nbMenuItem:hover {
+    animation: bounce 1.5s;
+  }
+
+  .custom-link {
+    text-decoration: none;  /* Removes the underline */
+    color: inherit;        /* Inherits the color from the h1 */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #537d43;            /* Change to desired hover color */
 }
