@@ -295,3 +295,17 @@ tbody td:nth-child(3) {
     text-decoration: underline; /* Adds underline on hover */
     color: #537d43;            /* Change to desired hover color */
 }
+
+#chart-wrapper{
+    margin: auto;
+    padding: 10px;
+    /* If nesting a chart's container within another container, remove the 
+       height and width values.  The outer container will control the dimensions */ 
+    height: 40vh; 
+    width:  80vw;
+    min-height: 400px;
+    background-color: whitesmoke !important;
+    justify-content: center;
+    align-items: center;  
+}
+
