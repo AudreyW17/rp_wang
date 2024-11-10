@@ -1,7 +1,12 @@
 
-async function getData(){
-    const response = await fetch('data/force-on-hand.csv');   //.. move up one folder 
-    const data = await response.text();     //CSV in-text format
+async function getRawData(){
+    const response = await fetch('data/force-on-hand.csv');
+    if (!response.ok) {
+        console.error('Failed to fetch CSV:', response.statusText);
+        return;
+    }
+    const data = await response.text();
+    console.log('Fetched Data:', data);  // Check the raw CSV data
     //console.log(data);
 
     const xTrials = [];     //x-axis labels
@@ -14,6 +19,7 @@ async function getData(){
     // split('\n') separate the table into an array of indiv. rows.
     // slice(start, end) - return a new array starting at index 'start' up to but not including 'end'
     const table = data.split('\n').slice(1);
+    console.log(table);
 
     table.forEach(row  => {
         const columns = row.split(','); // split row into columns using comma 
@@ -32,15 +38,13 @@ async function getData(){
         const nbwd = parseFloat((columns[4])) //condition 4 value
         yNBWD.push(nbwd);
 
-        console.log(dbnd, nbnd, dbwd, nbwd);
-
     });
     return{xTrials, yDBND, yNBND, yDBWD, yNBWD}    //return multiple values as objects 
 }  
 
-async function createChart(){
-    const data = await getData();      //wait for getData() to send
-    const lineChart = document.getElementById('lineChart');
+async function createDataChart(){
+    const data = await getRawData();      //wait for getData() to send
+    const lineChart = document.getElementById('lineChart-data');
 
     const myChart = new Chart(lineChart, {
         type: 'line',
@@ -144,4 +148,5 @@ async function createChart(){
     });
 }
 
-createChart();
+
+createDataChart();
