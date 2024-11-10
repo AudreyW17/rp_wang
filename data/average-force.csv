@@ -1,5 +1,2 @@
-Condition,Average
-1,5.28650
-2,5.84756
-3,5.52046
-4,5.59948
+Condition,Condition 1: No Vibration Dampener with Old Balls,Condition 2: No Vibration Dampener with New Balls,Condition 3: Vibration Dampener with Old Balls,Condition 4: Vibration Dampener with New Balls
+1,5.28650,5.50000,5.40000,5.60000
